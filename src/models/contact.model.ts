@@ -1,12 +1,12 @@
 import { Meeting } from "./meeting.model";
 
 export interface Contact {
-    Id: string;
+    id: string;
     name: string;
-    OrgName: string;
-    Email: string;
-    Phone: string;
-    IsInterviewSchedule: boolean;
-    Meeting: Meeting;
-    Meetings: Meeting[];
+    organizationName: string;
+    email: string;
+    phone: string;
+    isInterviewSchedule: boolean;
+    meeting: Meeting;
+    meetings: Meeting[];
 }
