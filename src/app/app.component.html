@@ -1,1 +1,22 @@
-<h1>This is app HTML</h1>
+<div class="flex h-screen">
+    <div class="w-[50%]">
+
+    </div>
+    <div class="overview-auto w-[50%]">
+    @if(contacts$ | async;as contacts) {
+    @if(contacts.length > 0) {
+    <ul>
+        @for(item of contacts; track $index)  
+        {
+            <li class="p-2 bg-slate-100 border-b-2 border-slate-200">
+                <span class="font-light text-2xl">{{item.name}}</span>
+            </li>
+        }
+    </ul>
+    } 
+    @else 
+    {
+       <p>No contacts found...</p>
+    }}
+    </div>
+</div>
